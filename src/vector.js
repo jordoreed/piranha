@@ -125,7 +125,7 @@ export class vec3 {
   }
 
   copy() {
-    return new vec2(this.x, this.y, this.z);
+    return new vec3(this.x, this.y, this.z);
   }
 
   addVec(v) {
@@ -233,7 +233,7 @@ export class vec4 {
   }
 
   copy() {
-    return new vec2(this.x, this.y, this.z, this.w);
+    return new vec4(this.x, this.y, this.z, this.w);
   }
 
   addVec(v) {
