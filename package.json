@@ -3,5 +3,14 @@
   "version": "1.0.0",
   "description": "Simple linear algebra tools for graphics",
   "main": "src/index.js",
-  "author": "Jordan Reed"
+  "author": "Jordan Reed",
+  "scripts": {
+    "test": "mocha -r esm 'src/**/*.test.js'"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.2"
+  },
+  "dependencies": {
+    "esm": "^3.2.25"
+  }
 }

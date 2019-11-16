@@ -1,12 +1,17 @@
-const { vec2, vec3, vec4 } = require('./vector');
-const { mat4 } = require('./matrix');
-const { box2 } = require('./box');
+import MathUtils from './math-utils'
+import vec2 from './vec2'
+import vec3 from './vec3'
+import vec4 from './vec4'
+import mat4 from './mat4'
+import box2 from './box2'
+import box3 from './box3'
 
-const MathUtils = require('./mathutils');
-
-module.exports = {
-  vec2, vec3, vec4,
+export {
+  MathUtils,
+  vec2,
+  vec3,
+  vec4,
   mat4,
   box2,
-  MathUtils,
-};
+  box3,
+}
