@@ -111,10 +111,17 @@ export default class box2 {
     mtv.y = Math.abs(b) < Math.abs(t) ? b : t
   }
 
-  containsBox(b) {
+  containsBox(box) {
     return (
-      b.min.x >= this.min.x && b.max.x <= this.max.x &&
-      b.min.y >= this.min.y && b.max.y <= this.max.y
+      box.min.x >= this.min.x && box.max.x <= this.max.x &&
+      box.min.y >= this.min.y && box.max.y <= this.max.y
+    )
+  }
+
+  containsVec(vec) {
+    return (
+      this.min.x < vec.x && vec.x < this.max.x &&
+      this.min.y < vec.y && vec.y < this.max.y
     )
   }
 }
